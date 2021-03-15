@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="UTF-8">
+        <title>Kirsty Hall Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+        function clickEffect(e) {
+            var d=document.createElement("div");
+            d.className="clickEffect";
+            d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+            document.body.appendChild(d);
+            d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+        }
+            document.addEventListener('click',clickEffect);
+        </script>
+        <!--------------------         TOP BAR         ---------------------->
+        <div class="topnav">
+            <!--      DROP DOWN SHADOW  -->
+            <script>
+                var topnav = $('.topnav');
+                $(window).scroll(function(e){
+                    if(topnav.offset().top !== 0){
+                        if(!topnav.hasClass('shadow')){
+                            topnav.addClass('shadow');
+                        }
+                    }else{
+                        topnav.removeClass('shadow');
+                    }
+                });
+            </script>
+            <div class="dropdown">
+               
+
+                <!--   BUTTON   -->
+                <div class="dropdownbutton" onclick="menu_animation(this), menudropdown(this)" >
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                  
+                <script>
+                function menu_animation(x) {
+                    x.classList.toggle("change");
+                }
+                </script>
+                <!--   END OF BUTTON  -->
+                
+
+                <!--    DROP DOWN ANIMATION    -->
+                <script>
+                function menudropdown() {
+                    document.getElementById("dropdown-content-id").classList.toggle("show");
+                }
+                </script>
+                <!--    END OF DROP DOWN ANIMATION    -->
+
+
+                <div class="dropdown-content" id="dropdown-content-id">
+                    <ul>
+                        <li><a href="main.html" class="active">Home</a></li>
+                        <li><a href="pivotbio.html">Pivot Bio</a></li>
+                        <li><a href="farn.html">FARN</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="sculpture.html">Sculpture</a></li>         
+                        <li><a href="biolab.html">Biolab</a></li>      
+                        <li><a href="fablab.html">Fablab</a></li> 
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+            <div class="logo"> 
+                <a href="main.html">
+                    <img class="img-logo" src="img/logo.png" alt="kirsty hall logo">
+                </a>
+                </div>
+            <div class="topnav-right">
+                <a href="contact.html" style="padding-right: 20px;">contact</a>
+            </div>
+        </div>
+        
+        <!--------------------       END OF TOP BAR      -------------------->
+        
+        <!------------- Background --------------->
+        <div class="background_boxes">
+            <div class="yellow_rectangle rellax" data-rellax-speed="-8"></div>
+            <div style="height: 120px;"></div>
+            <div class="blue_rectangle rellax" data-rellax-speed="2"></div>
+            <div class="blue2_rectangle rellax" data-rellax-speed="5"></div>
+            <div class="blue3_rectangle rellax" data-rellax-speed="-4"></div>
+        </div>
+        
+
+        <!--------------------        MAIN CONTENT       -------------------->     
+        <div class= "content">
+            <div class="column1 rellax" data-rellax-speed="2">
+                <div class="quote">
+                    "This should be about smth v deep and take up multiple lines."
+                </div>
+                <div class="experience">
+                    <div class="experience-img">
+                        <a href="pivotbio.html">
+                            <img src="img/pivotbio_main.png"  class="experience-img" alt="Pivot Bio">
+                            <div class="overlay">
+                                <div class="overlay-text"> 
+                                    May - Jul 2019 <br/> San Francisco
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="experience-title">
+                        <a href="pivotbio.html">Pivot Bio</a>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-img">
+                        <a href="fablab.html">
+                            <img src="img/fablab_main.png"  class="experience-img" alt="Fablab">
+                            <div class="overlay">
+                                <div class="overlay-text"> 
+                                    Sep - Dec 2018 <br/> Seoul
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="experience-title">
+                        <a href="fablab.html">fablab</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="column2 rellax" data-rellax-speed="-8">
+                <div class="experience">
+                    <div class="experience-img">
+                        <a href="biolab.html">
+                            <img src="img/biolab_main.png"  class="experience-img" alt="BIOLAB">
+                            <div class="overlay">
+                                <div class="overlay-text"> 
+                                    Sep - Dec 2018 <br/> Seoul
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="experience-title">
+                        <a href="biolab.html">BIOLAB</a>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-img">
+                        <a href="printing.html">
+                            <img src="img/printing_main.png"  class="experience-img" alt="Printing">
+                            <div class="overlay">
+                                <div class="overlay-text"> 
+                                    Aug - Dec 2015 <br/> Edinburgh
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="experience-title">
+                        <a href="printing.html">Printing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column3 rellax" data-rellax-speed="2">
+                <div class="experience">
+                    <div class="experience-img">
+                        <a href="photography.html">
+                            <img src="img/photography_main.png"  class="experience-img" alt="Photography">
+                            <div class="overlay">
+                                <div class="overlay-text"> 
+                                    Dec 2015 - Mar 2019 <br/> Multiple Locations
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="experience-title">
+                        <a href="photography.html">Photography</a>
+                    </div>
+                </div><div class="experience">
+                    <div class="experience-img">
+                        <a href="farn.html">
+                            <img src="img/farn_main.png"  class="experience-img" alt="FARN">
+                            <div class="overlay">
+                                <div class="overlay-text"> 
+                                    Jan - Jul 2020 <br/> Buenos Aires
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="experience-title">
+                        <a href="farn.html">FARN</a>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    <script src="./javascripts/rellax.min.js"></script>  
+    <script>
+        var rellax = new Rellax('.rellax')
+    </script>
+    </body>
+</html>

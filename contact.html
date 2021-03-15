@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirsty Hall - Biolab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+            <!--------------------         TOP BAR         ---------------------->
+            <div class="topnav">
+                <!--      DROP DOWN SHADOW  -->
+                <script>
+                    var topnav = $('.topnav');
+                    $(window).scroll(function(e){
+                        if(topnav.offset().top !== 0){
+                            if(!topnav.hasClass('shadow')){
+                                topnav.addClass('shadow');
+                            }
+                        }else{
+                            topnav.removeClass('shadow');
+                        }
+                    });
+                </script>
+                <div class="dropdown">
+                   
+    
+                    <!--   BUTTON   -->
+                    <div class="dropdownbutton" onclick="menu_animation(this), menudropdown(this)" >
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                      
+                    <script>
+                    function menu_animation(x) {
+                        x.classList.toggle("change");
+                    }
+                    </script>
+                    <!--   END OF BUTTON  -->
+                    
+    
+                    <!--    DROP DOWN ANIMATION    -->
+                    <script>
+                    function menudropdown() {
+                        document.getElementById("dropdown-content-id").classList.toggle("show");
+                    }
+                    </script>
+                    <!--    END OF DROP DOWN ANIMATION    -->
+    
+    
+                    <div class="dropdown-content" id="dropdown-content-id">
+                        <ul>
+                            <li><a href="main.html" >Home</a></li>
+                            <li><a href="pivotbio.html">Pivot Bio</a></li>
+                            <li><a href="farn.html">FARN</a></li>
+                            <li><a href="photography.html">Photography</a></li>
+                            <li><a href="sculpture.html">Sculpture</a></li>         
+                            <li><a href="biolab.html" >Biolab</a></li>      
+                            <li><a href="fablab.html">Fablab</a></li> 
+                            <li><a href="contact.html" class="active">contact</a></li>
+                        </ul>
+                        
+                        
+                    </div>
+                </div>
+                <div class="logo"> 
+                    <a href="main.html">
+                        <img class="img-logo" src="img/logo.png" alt="kirsty hall logo">
+                    </a>
+                    </div>
+                <div class="topnav-right">
+                    <a href="contact.html" style="padding-right: 20px;">contact</a>
+                </div>
+            </div>
+            
+            <!--------------------       END OF TOP BAR      -------------------->
+            
+            
+            <!------------- TITLE --------------->
+            <div class="subpage-title rellax" data-rellax-speed="0">
+                contact
+            </div>
+            
+            <!------------- Background --------------->
+            <div class="sub-background-box">
+                <div class="sub-yellow-box rellax" data-rellax-speed="2"></div>
+                <div class="sub-blue-box rellax" data-rellax-speed="8"></div>
+            </div>
+
+
+            <!------------- MAIN CONTENT --------------->
+        
+            <div class="contact rellax" data-rellax-speed="0">
+                <div class="contact-headers">
+                    <div>
+                        
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="contact-info">
+                    
+                </div> 
+            </div>
+            <script src="./javascripts/rellax.min.js"></script>  
+            <script>
+                var rellax = new Rellax('.rellax')
+            </script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+/* reset stylesheet */ 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    color: black;
+
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* --------------------------------- Edit starting  here ---------------------------- */
+
+div.clickEffect{
+    position: fixed;
+    box-sizing:border-box;
+    border-style:solid;
+    border-color:#a6caff;
+    border-radius:50%;
+    animation:clickEffect 0.4s ease-out;
+    z-index:99999;
+    }
+
+@keyframes clickEffect {
+    0% {
+        opacity:1;
+        width:0.5em; height:0.5em;
+        margin:-0.25em;
+        border-width:0.5em;
+    }
+    100% {
+        opacity:0.2;
+        width:15em; height:15em;
+        margin:-7.5em;
+        border-width:0.03em;
+    }
+}
+
+
+/*-------------------------------      INDEX PAGE    --------------------------------*/
+h1 { 
+    color: white;
+    font-size: 72px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    letter-spacing: 22px;
+}
+h2 {
+    color: white;
+    margin: 0px;
+    font-family: Georgia, Times, Cambria, Cochin,'Times New Roman', serif;
+    font-size:62px;
+    font-style:italic;
+    font-weight: normal;
+}
+.title {
+    vertical-align: middle;
+
+}
+.intro {
+    width: 100%;
+    vertical-align: middle;
+}
+.i_am_a {
+    float: left;
+    width: 50%;
+    text-align: right;
+    display: block;
+}
+
+.typing {
+    float: right;
+    width: 50%;
+}
+.typing h2 {
+    text-align: left;
+}
+.contentbox {
+    padding: 40px;
+    height: 90vh;
+}
+.bluebox {
+    float: left;
+    width: 85%;
+    height: 100%;
+    background-image: url(img/index_background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin: auto;
+    margin-top: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.whitebox {
+    float: right;
+    width: 15%;
+    vertical-align: middle;
+}
+
+/*-----------------------------      MAIN PAGE    ---------------------------*/
+body{
+    background-color: rgb(247, 247, 243);
+}
+
+.background_boxes {
+    position: fixed;
+    width: 100%;
+}
+.yellow_rectangle {
+    height: 220px;
+    width: 720px;
+    background-color: rgb(255, 245, 155);
+    opacity: 0.5;
+    padding-left: 100px;
+}
+.blue_rectangle {
+    height: 200px;
+    width: 820px;
+    background-color: rgb(116, 212, 236);
+    opacity: 0.4;
+    float: right;
+}
+
+.blue2_rectangle {
+    height: 100px;
+    width: 420px;
+    background-color: rgb(56, 85, 128);
+    opacity: 0.3;
+}
+.blue3_rectangle {
+    height: 150px;
+    width: 720px;
+    background-color: rgb(76, 126, 173);
+    opacity: 0.5;
+    float: right;
+}
+
+.topnav{
+    display: inline-block;
+    width: 100%;
+    line-height: 62px;
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
+.topnav.shadow {
+    box-shadow:0px 5px 5px rgba(235, 235, 235, 0.5);
+    z-index: 100000;
+}
+/* div containing the dropdown menu on left of topnav */
+.dropdown {
+    float:left;  
+    background:white; 
+    width:33.3%; 
+    height:60px;
+    overflow: hidden;
+    z-index: 10000;
+    box-shadow: #000;
+}
+.dropdownbutton {
+    padding-left: 18px;
+    padding-top: 8px;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+.bar1, .bar2, .bar3 {
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+/* box containing the dropdown content*/ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 360px;
+    overflow: auto;
+    z-index: 1;
+    padding-top: 13px;
+    box-shadow: 12px 22px 18px -2px rgba(185, 185, 185, 0.75);
+  }
+
+/*the actual dropdown content*/ 
+.dropdown-content li {
+    color: black;
+    font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri,  sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 8px 32px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+.dropdown-content li:hover {
+    font-weight: bolder;
+    font-size: 16;
+    }
+  
+.show {display: block;}
+
+/* An active class to highlight the current page */
+.active {
+    font-weight: bold;
+    font-size: 16;
+    color: rgb(0, 0, 0);
+    background-color: rgb(199, 233, 255);
+}
+
+/* div containin the logo on left of topnav */
+.logo {
+    float:left;  
+    background:white; 
+    width:33.3%; 
+    height:60px;
+    overflow: hidden;
+    text-align: center;
+}
+.img-logo {
+    height: 32px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+    
+}
+
+
+/* for styling the text of the topnav */
+.topnav-right {
+    float:right;  
+    background:white; 
+    width: 33.4%;; 
+    height:60px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+    text-align: right;
+}
+
+.content {
+    display: inline-block; 
+    width: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS','Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+    text-align: center;
+}
+
+
+
+/* -----------           main body           --------------*/
+
+.column1 {
+    width: 33.33%;
+    float: left;
+}
+.column2 {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    
+}
+.column3 {
+    width: 33.33%;
+    float: right; 
+}
+
+ /* --------         For each 'quote'        ----------*/
+ .quote {
+    height: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+    text-transform: none;
+    letter-spacing: 2px;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+    top: 50%;
+ }
+ 
+ /*-------------           For each 'experience'           ---------------*/
+.experience {
+    padding-bottom: 72px;
+    padding-top: 32px;
+    text-align: center; 
+    
+}
+
+.experience-img {
+    position: relative;
+    width: 100%;
+    max-width: 310px;
+    height: 250px; 
+    max-height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+    object-fit: cover;
+
+}
+
+.experience-title {
+    padding-top: 10px;
+    font-weight: bold;
+    z-index: 1000;
+}
+ /* --------         Experience overlay        ----------*/
+.overlay {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    height: 80%;
+    width: 80%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+}
+  
+.experience-img:hover .overlay {
+    opacity: 0.7;
+}
+  
+.overlay-text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-transform: none;
+    letter-spacing: 2px;
+    font-style: italic;
+    line-height: 120%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 35%;
+} 
+/* ----------------------------------------------     SUB PAGES     --------------------------------------------------------------------*/
+
+.subpage-title{
+    color: black;
+    font-size: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    letter-spacing: 18px;
+}
+.sub-background-box {
+    position: fixed;
+    width: 100%;
+}
+.sub-yellow-box {
+    height: 220px;
+    width: 92%;
+    background-color: rgb(255, 241, 117);
+    opacity: 0.2;
+    border-width: 30px;
+    border-bottom: 0px;
+    border-color: white;
+    border-style: solid;
+}
+
+.sub-blue-box {
+    height: 220px;
+    width: 92%;
+    background-color: rgb(116, 212, 236);
+    opacity: 0.2;
+    border-width: 30px;
+    border-top: 0px;
+    border-color: white;
+    border-style: solid;
+}
+
+/*------------------------------------------    CONTACT PAGE   --------------------------------------------*/
+
+.contact {
+    display: inline-block;
+    width: 100%;
+    height: 2000px;
+}
+
+.contact-headers {
+    float: right;
+    width: 50%;
+    padding: 30px;
+}  
+
+
+.contact-info {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
